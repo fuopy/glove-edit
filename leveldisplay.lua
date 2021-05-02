@@ -468,7 +468,7 @@ function LevelDisplay:keypressed(key, isRepeat)
 		self:exportAll()
 	elseif key == "n" and love.keyboard.isDown("lctrl") then
 		self:newLevel()
-	elseif key == " " then
+	elseif key == "space" then
 		tiletype, tileobj = self:getTileAt(self:getMouseTile())
 		if tiletype == "wall" then
 			self.changesMade = true
